@@ -1,16 +1,49 @@
 
 body {
+        margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #fff;
 }
 
+/* reset */
+
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.h1, h2, h3, h4, h5, h6 p {
+        margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+/* common */
+
+.container {
+        max-width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto;
+}
+
+/* header */
+
+.page-header {
+        border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+        display: flex;
+        align-items: center;
+}
+
+.header-nav {
+        display: flex;
+        align-items: center;
 }
 
 .logo {
@@ -27,11 +60,24 @@ a {
     color: #2e2f42;
 }
 
+.header-logo {
+        padding: 24px 0;
+        margin-right: 76px;
+}
+
 .footer-logo .logo-part {
     color: #f4f4fd;
 }
 
+.nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+}
+
 .nav-link {
+        display: block;
+        padding: 24px 0;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -41,9 +87,18 @@ a {
 
 .contacts {
     font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
 }
 
 .contacts-link {
+        display: block;
+        padding: 24px 0;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -64,7 +119,11 @@ a {
 /* ------ section-one ----- */
 
 .section-one {
-    background-color: #2e2f42;
+        background-color: #2e2f42;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 120px 20px;
+        position: relative;
 }
 
 .title-section-one {
@@ -74,9 +133,13 @@ a {
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
+        margin-bottom: 30px;
 }
 
-.button {
+.button {;
+        
+        border: none;
+        padding: 10px 24px;
         font-family: inherit;
         font-weight: 500;
         font-size: 16px;
@@ -96,11 +159,17 @@ a {
 
 .section-two {}
 
-.title-section-two {}
+.title-section-two {
+}
 
-.list-section-two {}
+.list-section-two {
+        display: flex;
+        gap: 24px;
+        width: calc((100% - 24px * 3) / 4);
+}
 
 .list-item-section {
+        margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -132,6 +201,7 @@ a {
 }
 
 .list-section-three {
+        display: flex;
 }
 
 .taste-item {
@@ -173,7 +243,9 @@ a {
         text-transform: capitalize;
 }
 
-.list-section-four {}
+.list-section-four {
+        display: flex;
+}
 
 .item-images {}
 
