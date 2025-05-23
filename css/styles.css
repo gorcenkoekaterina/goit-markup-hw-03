@@ -124,6 +124,10 @@ img {
 /* ------ section-one ----- */
 
 .section-one {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
         padding: 188px 0;
         background-color: #2e2f42;
         margin-left: auto;
